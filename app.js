@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
-var auctions = require('./routes/auctions');
+var auctions = require("./routes/auctions");
 
 
 var app = express();

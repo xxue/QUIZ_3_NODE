@@ -1,6 +1,30 @@
 <%- include('../partials/header.ejs') %>
 
 <div class="container">
-  <h1 class= "auctiontitle"><%= auction.title %></h1>
-  <p><%= auction.details %></p>
+  <div class="row">
+    <div class="col-xs-6">
+      <h1 class= "auctiontitle"><%= auction.title %></h1><br>
+      <p><%= auction.details %></p> <br>
+    </div>
+
+
+    <div class="col-xs-5 col-xs-offset-1" style="margin-top:30px">
+      <input style="width: 300px;
+      height: 25px" placeholder="enter amount higher than current price"></input>
+        <button class="btn btn-lg" type="button" name="button" style="padding:4px;color:ivory;background-color:#8e094c !important">Place Bid</button>
+
+      <h3>Current Price: CAD <%= auction.current_price %></h3>
+      <h3>State: <%= auction.state %></h3><hr>
+      <h4>Previous Bids</h4>
+      <li>
+        <ul>
+        </ul>
+      </li>
+
+    </div>
+
+
+  </div>
+
+
 </div>
