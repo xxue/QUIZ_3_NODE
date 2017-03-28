@@ -1,0 +1,24 @@
+body {
+  padding: 10px;
+  font: 16px "Georgia", sans-serif;
+  color: #837E7C;
+  background-color: black
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #0f9ae0;
+  font-size: 20px;
+}
+
+.submissionfield {
+  width: 300px;
+  height: 25px;
+  /*border: 1px solid #999999; */
+  /*padding: 5px; */
+}
+
+#logo {
+  margin-left: 60px;
+  height: 140px;
+  width: 300px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="utf-8">
+    <title> Auction </title>
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" />
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+
+      <link rel='stylesheet' href='/stylesheets/style.css'>
+  </head>
+
+  <body>
+
+
+    <div class="container-fluid" id="top">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-4">
+          <span><img id="logo" src="/images/logo.jpg" />    </span>
+        </div>
+
+      </div>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+           <button
+              type="button"
+              class="navbar-toggle collapsed"
+              data-toggle="collapse"
+              data-target="#shrink">
+              <span class="glyphicon glyphicon-menu-hamburger">
+            </button>
+
+
+      <div class="row">
+          <div class="col-xs-2">
+        <a class="navbar-brand" href="/">
+          <span class="glyphicon glyphicon-home"></span>
+        </a>
+      </div>
+
+        <div class="col-xs-8 col-xs-offset-2">
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li><a class="navLink" href='/'>Current Auction List</a></li>
+                  <li><a class="navLink" href='/new'>New Auctions</a></li>
+                  <li><a class="navLink" href='#'>Watched Auctions</a></li>
+                </ul>
+              </div>
+            </div>
+              </div>
+            </div>
+
+      </nav>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+
+    <script type="text/javascript">
+      $(function() {
+      $( "#datepicker" ).datepicker({format: 'dd/mm/yyyy'});
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,56 @@
+<%- include('../partials/header.ejs') %>
+<div class="row">
+  <div class="col-xs-8 col-xs-offset-3">
+    <div class="row">
+      <div class="col-xs-8 col-xs-offset-3">
+        <h1>Create New Auction</h1><br><br>
+      </div>
+    </div>
+
+
+<form action="/auctions" method="post">
+  <div class="row">
+    <div class="col-xs-3">
+      <label for="title">Title</label>
+    </div>
+    <div class="col-xs-9">
+        <input class="submissionfield" type="text" id="title" name="title"  size="18" length="60"/>
+    </div>
+  </div><br>
+
+  <div class="row">
+      <div class="col-xs-3">
+    <label for="details"  size="15">Details</label>
+  </div>
+            <div class="col-xs-9">
+    <textarea rows="3" cols="35" maxlength="255" type="text" id="details" name="details"></textarea>
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-xs-3">
+    <label for="date">Ends On</label>
+  </div>
+        <div class="col-xs-9">
+    <input class="submissionfield" type="text" id="datepicker" name="date">
+  </div>
+  </div><br>
+
+  <div class="row">
+    <div class="col-xs-3">
+    <label for="reserveprice">Reserve Price</label>
+    </div>
+    <div class="col-xs-9">
+    <input class="submissionfield" name="reserveprice"></input>
+  </div>
+</div><br>
+
+<div class="row">
+  <div class="col-xs-5 col-xs-offset-6">
+<input type="submit" class="btn btn-primary btn-lg" style="color:wheat;padding:6px" value="Save"></button>
+</div>
+</div>
+
+</form>
+  </div>
+</div>
