@@ -10,7 +10,18 @@ router.get('/new', function (req, res) {
 
 router.post('/new', function (req, res, next){
     const params = req.body;
-    res.render('auctions/new', { params });
+    Auction
+      .create({
+      title: params.title,
+      details: params.details,
+      // end_date: params.date,
+      reserve_price: params.reserveprice
+      })
+      .then(
+        auctions => {
+          res.render('auctions/index', {auctions})
+        }
+      );
 });
 
 router.get('/', function(req, res, next) {
