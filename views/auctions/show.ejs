@@ -9,11 +9,14 @@
 
 
     <div class="col-xs-5 col-xs-offset-1" style="margin-top:30px">
-      <input style="width: 300px;
-      height: 25px" placeholder="enter amount higher than current price"></input>
-        <button class="btn btn-lg" type="button" name="button" style="padding:4px;color:ivory;background-color:#8e094c !important">Place Bid</button>
+      <form class="" action="/auctions/<%= auction.id %>" method="post">
 
-      <h3>Current Price: CAD <%= auction.current_price %></h3>
+      <input style="width: 300px;
+      height: 25px" placeholder="enter amount higher than current price" name="price"></input>
+        <button class="btn btn-lg" type="submit" name="button" style="padding:4px;color:ivory;background-color:#8e094c !important">Place Bid</button>
+
+      </form>
+    
       <h3>State: <%= auction.state %></h3><hr>
       <h4>Previous Bids</h4>
       <li>
